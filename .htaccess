@@ -1,0 +1,15 @@
+# Átirányítást végző motor bekapcsolása
+RewriteEngine on
+
+# Átirányításra vonatkozó kivétel hozzáadása
+RewriteCond %{REQUEST_FILENAME} !/Application/Style
+
+# átirányítás célfájlja
+RewriteRule ^ index.php [L]
+
+# Mappák kilistázásának letiltása
+Options -indexes
+
+
+
+

@@ -1,0 +1,140 @@
+/*---- Generaly element selectors ----*/
+body {
+    margin          : 0;
+    background-color: #f7f7f7;
+    font-size       : 16px;   
+    font-family     : DejaVu Serif; 
+    min-height      : 100vh;
+}
+body *::selection {
+    background-color: #000;
+    color           : #fff;    
+}
+* {
+    outline         : none;
+}
+:root {    
+    --color-rng     : #e62222; 
+}
+/*---- HEADER ----*/
+.header {    
+    width           : calc( 100% - 20px );
+    padding         : 0 10px;    
+    height          : 60px;
+    background-image: var(--bg-color);     
+    box-shadow      : 0 5px 10px #ddd;
+    font-size       : 16px;
+    user-select     : none; /* Standard syntax */
+    -ms-user-select : none; /* IE 10+ and Edge */
+    -webkit-user-select: none; /* Safari */
+}
+.header > span {    
+    font-size       : 40px;
+    line-height     : 40px;
+    margin-top      : 10px;
+    margin-bottom   : 10px;
+    margin-right    : 20px;    
+    margin-left     : 10;    
+    float           : left;
+    text-shadow     : 2px 2px #aaa;  
+}
+.header > a.active {
+    border-bottom   : 2px solid var(--color-rng);    
+    height          : 1.2em;         
+}
+.header > a {
+    position        : relative;
+    padding         : 20px 15px;
+    display         : inline-block;
+    text-decoration : none;
+    color           : black;
+    transition      : background-color 0.2s ease-in-out, color 60s ease-in;
+}
+.header > a.about {
+    float           : right;
+}
+.header > a:hover:not(.active) { 
+    background-color: #eee;
+    color           : #fff;
+    border-radius   : 10px;
+    padding         : 15px 15px;
+    margin          : 5px 0;
+}
+
+/*---- Home page ----*/
+.wellcome-container {    
+    text-align      : center;
+    margin          : 50px auto;         
+}
+
+
+/*---- About ----*/
+.about-container {
+    font-size       : 20px;
+    text-align      : center;
+    width           : 60%;
+    margin          : 50px auto;      
+}
+.about-container:last-child {
+    font-style      : italic;
+}
+.about-container .name-plate {
+    letter-spacing  : 0.5em;
+    font-size       : 50px;
+    padding-bottom  : 50px;      
+}
+.about-container .name-plate::first-letter {
+    color           : var(--color-rng);
+    font-size       : 1.2em;
+}
+
+/*---- ERROR ----*/
+.error-cont {
+    margin          : auto;
+    padding         : 120px 0;    
+    text-align      : center;    
+    display         : table;
+    font-size       : 20px;       
+    color           : #555;
+}
+.error-cont > span {
+    color           : var(--color-rng);
+    font-size       : 2em;
+}
+
+/*---- 404 ----*/
+._404-msg{
+    margin-top      : 100px;
+    text-align      : center;
+    white-space     : pre;
+    color           : #555;
+}
+._404-msg > span:first-of-type {
+    color           : var(--color-rng);
+    font-size       : 3em;
+    font-family     : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style      : italic;
+}
+._404-msg > span:last-of-type {       
+    display         : block;
+    margin-top      : 10vh;
+}
+._404-msg span > b {
+    color           : var(--color-rng);
+}
+
+/*---- Buttons ----*/
+.btn {
+    border          : none;
+    border-radius   : 4px;
+    padding         : 4px 10px;
+    box-shadow      : 2px 2px 5px #ddd;
+}
+.btn-grn {
+    background-image: linear-gradient(to bottom, rgb(129, 179, 129), rgb(0, 167, 0));
+    color           : white;
+}
+.btn-rng {
+    background-image: linear-gradient(to bottom, rgb(248, 180, 53), rgb(255, 140, 0));
+    color           : white;
+}
