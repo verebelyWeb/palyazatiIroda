@@ -75,5 +75,5 @@ function errorLog($message)
     $path = APPPATH.'Log/dberror.log';
     $msg  = "[".date('Y-m-d H:i:s')."]".$message.PHP_EOL;
 
-    return file_put_contents($path, $msg);
+    return file_put_contents($path, $msg, FILE_APPEND);
 }
