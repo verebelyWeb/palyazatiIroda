@@ -20,10 +20,10 @@ body *::selection {
 .header {    
     width           : calc( 100% - 20px );
     padding         : 0 10px;    
-    height          : 60px;
+    min-height          : 60px;
     background-image: var(--bg-color);     
     box-shadow      : 0 5px 10px #ddd;
-    font-size       : 16px;
+    font-size       : 16px;    
     user-select     : none; /* Standard syntax */
     -ms-user-select : none; /* IE 10+ and Edge */
     -webkit-user-select: none; /* Safari */
@@ -47,7 +47,7 @@ body *::selection {
     padding         : 20px 15px;
     display         : inline-block;
     text-decoration : none;
-    color           : black;
+    color           : #000;
     transition      : background-color 0.2s ease-in-out, color 60s ease-in;
 }
 .header > a.about {
