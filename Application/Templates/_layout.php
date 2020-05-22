@@ -11,6 +11,6 @@
     <!-- Free icons: https://icons8.com/app -->
     <?php require_once APPPATH.'Templates/header.php' ?>
     <!-- View -->
-    <?php require_once APPPATH."Templates/{$view}View.php" ?>
+    <?php require_once APPPATH."Templates/{$view}View.php" ?>    
 </body>
 </html>

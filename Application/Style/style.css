@@ -1,10 +1,18 @@
 /*---- Generaly element selectors ----*/
+html {
+    background-image: url("../Images/competition.jpg");
+    background-attachment: fixed;
+}
 body {
-    margin          : 0;
+    margin          : 0 auto;
+    padding         : 20px;
+    margin-top      : 60px;
     background-color: #f7f7f7;
     font-size       : 16px;   
     font-family     : DejaVu Serif; 
-    min-height      : 100vh;
+    min-height      : calc(100vh - 70px);    
+    width           : 70vw;  
+    display         : table;  
 }
 body *::selection {
     background-color: #000;
@@ -14,16 +22,19 @@ body *::selection {
     outline         : none;
 }
 :root {    
-    --color-rng     : #e62222; 
+    --main-color     : #3622e6; 
 }
 /*---- HEADER ----*/
 .header {    
     width           : calc( 100% - 20px );
     padding         : 0 10px;    
-    min-height          : 60px;
-    background-image: var(--bg-color);     
+    min-height      : 60px;
+    background-color: white;     
     box-shadow      : 0 5px 10px #ddd;
     font-size       : 16px;    
+    position        : fixed;
+    top             : 0;  
+    left            : 0;  
     user-select     : none; /* Standard syntax */
     -ms-user-select : none; /* IE 10+ and Edge */
     -webkit-user-select: none; /* Safari */
@@ -39,7 +50,7 @@ body *::selection {
     text-shadow     : 2px 2px #aaa;  
 }
 .header > a.active {
-    border-bottom   : 2px solid var(--color-rng);    
+    border-bottom   : 2px solid var(--main-color);    
     height          : 1.2em;         
 }
 .header > a {
@@ -84,7 +95,7 @@ body *::selection {
     padding-bottom  : 50px;      
 }
 .about-container .name-plate::first-letter {
-    color           : var(--color-rng);
+    color           : var(--main-color);
     font-size       : 1.2em;
 }
 
@@ -98,7 +109,7 @@ body *::selection {
     color           : #555;
 }
 .error-cont > span {
-    color           : var(--color-rng);
+    color           : var(--main-color);
     font-size       : 2em;
 }
 
@@ -110,7 +121,7 @@ body *::selection {
     color           : #555;
 }
 ._404-msg > span:first-of-type {
-    color           : var(--color-rng);
+    color           : var(--main-color);
     font-size       : 3em;
     font-family     : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style      : italic;
@@ -120,7 +131,7 @@ body *::selection {
     margin-top      : 10vh;
 }
 ._404-msg span > b {
-    color           : var(--color-rng);
+    color           : var(--main-color);
 }
 
 /*---- Buttons ----*/
@@ -129,6 +140,7 @@ body *::selection {
     border-radius   : 4px;
     padding         : 4px 10px;
     box-shadow      : 2px 2px 5px #ddd;
+    text-decoration : none;
 }
 .btn-grn {
     background-image: linear-gradient(to bottom, rgb(129, 179, 129), rgb(0, 167, 0));
@@ -137,4 +149,24 @@ body *::selection {
 .btn-rng {
     background-image: linear-gradient(to bottom, rgb(248, 180, 53), rgb(255, 140, 0));
     color           : white;
+}
+.btn-rd {
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(184, 0, 0));
+    color           : white;
+}
+
+
+/*---- Table ----*/
+.table {
+    width           : 90%;
+    margin          : auto;
+}
+
+.table th, 
+.table td {
+    line-height     : 60px;
+    text-align      : center;
+} 
+.table td {
+    border-bottom   : 1px solid #eee;
 }

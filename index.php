@@ -5,7 +5,7 @@
     // Logolás szintje -> error level
     error_reporting(E_ALL);    
     //hibaüzenetek kimenetre írásának ki/be kapcsolása.
-    ini_set('display_errors', 0);
+    ini_set('display_errors', "1");
     // Logolás be/ki kapcsolása
     ini_set("log_errors", 1);
     // Logfájl útvonala

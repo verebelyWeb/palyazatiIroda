@@ -1,5 +1,20 @@
 <?php
 
+function competitionsController()
+{
+
+    $config = getConfig(CONFPATH);
+    $pdo    = getConnection($config);
+    
+
+    view([
+        "competitions"  => 'active',
+        "title"         => "Pályázatok",
+        'view'          => 'competitions',
+        'competitionsDatas' => getCompetitions($pdo)
+    ]);
+}
+
 function homeController()
 {    
     view([

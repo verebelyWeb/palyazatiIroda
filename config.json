@@ -1,6 +1,6 @@
 {
-    "userName":"",
-    "password":"",
-    "hostName":"",
-    "database":""
+    "userName":"root",
+    "password":"1024",
+    "hostName":"localhost",
+    "database":"palyazatiIroda"
 }

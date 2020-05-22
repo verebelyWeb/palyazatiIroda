@@ -1,1 +1,1 @@
-<div class="wellcome-container">Home page</div>
+<div class="wellcome-container">„Üdvözöljük pályázati irodánk weboldalán!</div>

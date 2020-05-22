@@ -43,7 +43,8 @@
      * Ezen a ponton vesszük fel az egyes controllereket a kapott útvonalakhoz.
      */
     addRoute('/?', 'homeController');      
-    addRoute('/about/?', 'aboutController');      
+    addRoute('/about/?', 'aboutController');
+    addRoute('/competitions/?', 'competitionsController');  
     
 
     /**
