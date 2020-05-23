@@ -45,7 +45,8 @@
     addRoute('/?', 'homeController');      
     addRoute('/about/?', 'aboutController');
     addRoute('/competitions/?', 'competitionsController');  
-    
+    addRoute('/invoices/(?<competitionId>\d+)', 'invoicesController');
+
 
     /**
      * A routing függvény végzi a kikeresést és a controller függvény meghívását.

@@ -11,7 +11,7 @@
             <td><?= $competition["id"] ?></td>
             <td><?= $competition["tevezetA"] ?></td>
             <td><?= $competition["tervezetC"] ?></td>
-            <td><a href="/invoices" class="btn btn-grn">lekér</a></td>
+            <td><a href="/invoices/<?= $competition["id"] ?>" class="btn btn-grn">lekér</a></td>
             <td><a href="/competitionDelete" class="btn btn-rd">Tőrlés</a></td>
         </tr>        
     <?php endforeach ?>

@@ -1,5 +1,22 @@
 <?php
 
+function invoicesController($matches)
+{
+    $config         = getConfig(CONFPATH);
+    $pdo            = getConnection($config);
+    $competitionId  = $matches['competitionId'];
+    $costId         = isset($_POST['competitionId']) ? $_POST['competitionId'] : false;
+    
+    view([        
+        "title"             => "Pályázatok",
+        'view'              => 'invoices',
+        'invoices'          => getInvoices($pdo, $competitionId, $costId),
+        'costs'             => getCosts($pdo),
+        'competitionId'     => $competitionId  
+    ]);
+
+}
+
 function competitionsController()
 {
 
@@ -8,9 +25,9 @@ function competitionsController()
     
 
     view([
-        "competitions"  => 'active',
-        "title"         => "Pályázatok",
-        'view'          => 'competitions',
+        "competitions"      => 'active',
+        "title"             => "Pályázatok",
+        'view'              => 'competitions',
         'competitionsDatas' => getCompetitions($pdo)
     ]);
 }
