@@ -7,7 +7,7 @@
     //hibaüzenetek kimenetre írásának ki/be kapcsolása.
     ini_set('display_errors', "1");
     // Logolás be/ki kapcsolása
-    ini_set("log_errors", 1);
+    ini_set("log_errors", "1");
     // Logfájl útvonala
     ini_set("error_log", APPPATH."Log/sys.log");
 

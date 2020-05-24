@@ -170,3 +170,16 @@ body *::selection {
 .table td {
     border-bottom   : 1px solid #eee;
 }
+
+/*---- FeedBack ----*/
+#main-msg {
+    text-align      : center;
+    font-size       : 30px;
+}
+.succ-msg {
+    color           : #090;
+}
+.err-msg {
+    color           : #fff;
+    background-color: red;
+}

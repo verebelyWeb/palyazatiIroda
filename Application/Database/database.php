@@ -1,5 +1,27 @@
 <?php
 
+function deleteCompetition( PDO $pdo, $competitionId)
+{
+    $smt = $pdo->prepare("DELETE FROM `_palyazat` WHERE `id` = :competitionId");
+
+    $smt->bindParam(":competitionId", $competitionId);
+
+    try 
+    {
+        if (!$smt->execute())
+        {
+            throw new PDOException($smt->errorInfo()[2]);
+        }
+
+        return true;
+    } 
+    catch (PDOException $e) 
+    {
+        errorLog($e->getMessage());
+        return false;
+    }
+}
+
 function getCosts( PDO $pdo )
 {
     $smt = $pdo->prepare("SELECT * FROM `koltsegtipus`");

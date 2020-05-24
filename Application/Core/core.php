@@ -46,6 +46,7 @@
     addRoute('/about/?', 'aboutController');
     addRoute('/competitions/?', 'competitionsController');  
     addRoute('/invoices/(?<competitionId>\d+)', 'invoicesController');
+    addRoute('/competitionDelete/(?<competitionId>\d+)/?', 'competitionDeleteController');
 
 
     /**
