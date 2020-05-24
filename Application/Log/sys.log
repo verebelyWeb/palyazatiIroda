@@ -5,3 +5,247 @@
 [24-May-2020 15:42:08 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
 [24-May-2020 15:42:08 Europe/Berlin] PHP   4. competitionDeleteController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
 [24-May-2020 15:42:08 Europe/Berlin] PHP   5. header() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:22
+[24-May-2020 16:25:45 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:20) in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php on line 22
+[24-May-2020 16:25:45 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:25:45 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:25:45 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:25:45 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:25:45 Europe/Berlin] PHP   4. competitionDeleteController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:25:45 Europe/Berlin] PHP   5. header() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:22
+[24-May-2020 16:27:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function newInvoiceController() in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+Stack trace:
+#0 /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php(55): routing('/newInvoice')
+#1 /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php(36): require_once('/home/m_/Asztal...')
+#2 {main}
+  thrown in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php on line 46
+[24-May-2020 16:46:55 Europe/Berlin] PHP Notice:  Array to string conversion in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/header.php on line 7
+[24-May-2020 16:46:55 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:46:55 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:46:55 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:46:55 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:46:55 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:46:55 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:46:55 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:46:55 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:12
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 16:50:01 Europe/Berlin] PHP Notice:  Undefined index: megnevezes in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/newInvoiceFormView.php on line 5
+[24-May-2020 16:50:01 Europe/Berlin] PHP Stack trace:
+[24-May-2020 16:50:01 Europe/Berlin] PHP   1. {main}() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:0
+[24-May-2020 16:50:01 Europe/Berlin] PHP   2. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php:36
+[24-May-2020 16:50:01 Europe/Berlin] PHP   3. routing() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php:55
+[24-May-2020 16:50:01 Europe/Berlin] PHP   4. newInvoiceFormController() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+[24-May-2020 16:50:01 Europe/Berlin] PHP   5. view() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/controllers.php:11
+[24-May-2020 16:50:01 Europe/Berlin] PHP   6. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:63
+[24-May-2020 16:50:01 Europe/Berlin] PHP   7. require_once() /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Templates/_layout.php:14
+[24-May-2020 17:00:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function newInvoiceController() in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php:46
+Stack trace:
+#0 /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/core.php(57): routing('/newInvoice')
+#1 /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/index.php(36): require_once('/home/m_/Asztal...')
+#2 {main}
+  thrown in /home/m_/Asztal/Feladatok/palyazatiIroda/feladat/palyazatiIroda/Application/Core/functions.php on line 46

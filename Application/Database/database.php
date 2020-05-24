@@ -1,5 +1,41 @@
 <?php
 
+function insertNewInvoice( PDO $pdo, $invoice)
+{
+    extract($invoice);
+
+    $smt = $pdo->prepare(
+        "INSERT INTO `szamla` VALUES (
+            (SELECT MAX(id) + 1 FROM (SELECT * FROM `szamla`) T),
+            :szamlaszam, 
+            current_date, 
+            :ertek, 
+            :palyazatId, 
+            :koltsegtipusId
+        )"
+    );
+
+    $smt->bindParam(":szamlaszam",      $szamlaszam);
+    $smt->bindParam(":ertek",           $ertek);
+    $smt->bindParam(":palyazatId",      $palyazatId);
+    $smt->bindParam(":koltsegtipusId",  $koltsegtipusId);
+
+    try 
+    {
+        if (!$smt->execute())
+        {
+            throw new PDOException($smt->errorInfo()[2]);
+        }
+
+        return true;
+    } 
+    catch (PDOException $e) 
+    {
+        errorLog($e->getMessage());
+        return false;
+    }
+}
+
 function deleteCompetition( PDO $pdo, $competitionId)
 {
     $smt = $pdo->prepare("DELETE FROM `_palyazat` WHERE `id` = :competitionId");

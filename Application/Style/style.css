@@ -18,6 +18,9 @@ body *::selection {
     background-color: #000;
     color           : #fff;    
 }
+h2 {
+    text-align      : center;
+}
 * {
     outline         : none;
 }
@@ -182,4 +185,30 @@ body *::selection {
 .err-msg {
     color           : #fff;
     background-color: red;
+}
+
+/*---- Form ----*/
+.form {
+    padding         : 20px;    
+    display         : table;
+    margin          : 50px auto;
+}
+
+.form label {
+    display         : block;
+    color           : #777;
+    font-size       : 12px;
+    margin-top      : 20px;
+}
+.form input:not([type="submit"]) {
+    width           : 300px;
+    border          : none;    
+    padding         : 10px;
+    border-bottom   : 1px solid #eee;
+    background-color: rgb(255, 251, 211);
+}
+.form div {        
+    display         : table;
+    float           : left;
+    padding         : 0 5px;
 }

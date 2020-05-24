@@ -5,5 +5,5 @@
     <!-- Ide jönnek a feladatspecifikus menüpontok -->
         <!-- Példa modul menüpont -->
     <a href="<?= APPROOT ?>/competitions" class="<?=@$competitions?>">Pályázatok</a>       
-    <a href="<?= APPROOT ?>/newInvoice" class="<?=@$newInvoice?>">Új számla</a>       
+    <a href="<?= APPROOT ?>/newInvoiceForm" class="<?=@$newInvoice?>">Új számla</a>       
 </header>

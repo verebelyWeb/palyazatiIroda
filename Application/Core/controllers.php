@@ -1,12 +1,49 @@
 <?php
 
+function newInvoiceController()
+{
+    $pdo = getConnection(getConfig(CONFPATH));
+    $invoice = $_POST;
+
+    if (insertNewInvoice($pdo, $invoice))
+    {
+        $msg = '<span class="succ-msg">Sikeres rögzítés</span>';
+        $title = 'Sikeres rögzítés';
+    }
+    else
+    {
+        $msg = '<span class="err-msg">Sikertelen rögzítés</span>';
+        $title = 'Sikertelen rögzítés';
+    }     
+
+    view([
+        'view'  => 'feedBack',
+        'title' => $title,
+        'msg'   => $msg
+    ]);
+
+
+}
+
+function newInvoiceFormController()
+{
+    $pdo = getConnection(getConfig(CONFPATH));
+
+    view([
+        'view'              => 'newInvoiceForm',
+        'title'             => 'Új számla felvétele',
+        'competitionsDatas' => getCompetitions($pdo),
+        'costTypes'         => getCosts($pdo)
+    ]);
+}
+
 function competitionDeleteController($matches)
 {
     $competitionId = $matches['competitionId'];    
     $pdo           = getConnection(getConfig(CONFPATH));
 
 
-    if (true/*deleteCompetition($pdo, $competitionId)*/)
+    if (deleteCompetition($pdo, $competitionId))
     {
         $msg = '<span class="succ-msg">Sikeres törlés</span>';
         $title = 'Sikeres törlés';
@@ -16,18 +53,22 @@ function competitionDeleteController($matches)
         $msg = '<span class="err-msg">Sikertelen törlés</span>';
         $title = 'Sikertelen törlés';
     }
-    ob_end_flush();
-echo 'almafa';
+
     // a feljéc írása meg kell, hogy előzze a törzs írását!
-    header("refresh:2;url=/competitions");
+    header("refresh:2;url=/competitions");        
+
+/* 
+    ob_start(); -> puffer bekapcsolása
+    ob_flush(); -> kimenetre írja a buffer tartalmát
+    ob_end_flush(); -> kiír és befejezi a bufferelést
+    output buffer
+*/
 /*
     1. státusz sor
     x. fejléc szekció
 
-    x. http törzs -> html, json, css, js, ....
+    x. http törzs -> html, json, css, js, ...
 */
-
-die;
 
     view([
         'view'  => 'feedBack',
